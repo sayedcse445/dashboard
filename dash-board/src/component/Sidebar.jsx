@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.json'
 import '../component/style.css'
+import {Link} from 'react-router-dom'
 
 export default function Sidebar() {
   const [active,setActive] = useState(1)
@@ -14,22 +15,22 @@ export default function Sidebar() {
         <hr className='text-white mt-3' />
         <ul className='nav nav-pills flex-column'>
           <li className={active ===1 ?'active nav-item p-2': 'nav-item p-2'} onClick={e =>setActive(1)}>
-            <span className="p-1">
+            <Link to="/" className="p-1">
               <i className='bi bi-speedometer2 me-2 text-white'></i>
               <span className='text-white '>Dashboard</span>
-            </span>
+            </Link>
             </li>
             <li className={active ===2 ?'active nav-item p-2': 'nav-item p-2'} onClick={e =>setActive(2)}>
-            <span className="p-3">
+            <Link to="/users" className="p-3">
               <i className='bi bi-people me-2 text-white'></i>
               <span className='text-white '>User</span>
-            </span>
+            </Link>
           </li>
           <li className={active ===3 ?'active nav-item p-2': 'nav-item p-2'} onClick={e =>setActive(3)}>
-            <span className="p-3">
+            <Link to="/orders" className="p-3">
               <i className='bi bi-table me-2 text-white'></i>
               <span className='text-white '>Order</span>
-            </span>
+            </Link>
           </li>
           <li className={active ===4 ?'active nav-item p-2': 'nav-item p-2'} onClick={e =>setActive(4)}>
             <span className="p-3">

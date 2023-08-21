@@ -76,7 +76,14 @@ function Home() {
             </div>
           </div>
         </div>
-        
+        <div className="row">
+          <div className="col-12 col-md-8 p-3">
+            {/* <LineChat /> */}
+          </div>
+          <div className="col-12 col-md-4 p-3">
+            <piChart />
+          </div>
+        </div>
       </div>
     </div>
   );
