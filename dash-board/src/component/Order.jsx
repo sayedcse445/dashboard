@@ -1,10 +1,10 @@
-// import React from 'react'
+import React from 'react'
 
-// function Order() {
-//   return (
-//     <div>
+function Order() {
+  return (
+    <div>
       
-//     </div>
-//   )
-// }
-// export default Order
+    </div>
+  )
+}
+export default Order
